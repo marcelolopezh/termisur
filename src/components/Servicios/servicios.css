@@ -1,0 +1,50 @@
+/* Estilos generales de la sección de servicios */
+#services {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item i {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Animaciones de entrada utilizando Animate.css */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Establecer el retraso para cada elemento */
+.service-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
