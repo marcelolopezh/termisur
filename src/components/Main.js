@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import { CarouselTermisur } from "./CarouselTermisur";
-import { Contacto } from "./Contacto";
+import { CarouselTermisur } from "./Carousel/CarouselTermisur";
 import { Footer } from "./Footer/Footer";
 import { NavbarTop } from "./NavbarTop";
 import { Servicios } from "./Servicios/Servicios";

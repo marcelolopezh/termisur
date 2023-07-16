@@ -6,6 +6,17 @@ export const Servicios = () => {
       <section id="services">
         <div className="container">
           <div className="row">
+            <div className="col-lg-12">
+              <h4>Nuestros Servicios</h4>
+              <h6>
+                En Termisur, nos enorgullece ofrecerte servicios de ventanas
+                termopanel de la más alta calidad. Nuestro equipo de expertos
+                está comprometido en proporcionar soluciones a medida para tus
+                necesidades.{" "}
+              </h6>
+            </div>
+          </div>
+          <div className="row">
             <div className="col-lg-4">
               <div className="service-item animate__animated animate__fadeIn">
                 <i className="fas fa-window-maximize"></i>

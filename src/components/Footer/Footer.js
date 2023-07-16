@@ -9,10 +9,12 @@ export const Footer = () => {
             <h3>Encuéntranos</h3>
             <div className="map-container">
               <iframe
+                title="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15825.446733734138!2d-72.60424818311688!3d-38.7386700460163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96199004ea5d0f79%3A0x7a0d55fb1d9a78d!2sTemuco%2C%20Araucan%C3%ADa!5e0!3m2!1sen!2scl!4v1627064487456!5m2!1sen!2scl"
                 width="300"
                 height="300"
-a                style={{ border: 0 }}
+                a
+                style={{ border: 0 }}
               ></iframe>
             </div>
           </div>
