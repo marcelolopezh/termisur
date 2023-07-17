@@ -1,6 +1,6 @@
 #services {
     padding: 80px 0;
-    background-color: #f30000;
+    background-color: #eeeeee;
 }
 
 .service-item {
@@ -69,6 +69,6 @@
 .descripcion {
     font-family: "Helvetica", sans-serif;
     font-size: 14px;
-    color: #d63535;
+    color: #d4bbbb;
     line-height: 1.5;
 }
