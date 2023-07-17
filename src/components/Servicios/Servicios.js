@@ -4,12 +4,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export const Servicios = () => {
   useEffect(() => {
-    AOS.init({
-    });
+    AOS.init({});
   }, []);
 
   return (
     <section id="services">
+      <div className="container">
         <div className="row">
           <div className="col-md-12">
             <h2 data-aos="fade-up">Nuestros Servicios</h2>
@@ -22,10 +22,14 @@ export const Servicios = () => {
           </div>
         </div>
         <div className="row md-5">
-          <div className="col-lg-4" data-aos="zoom-out-top" data-aos-delay="300">
+          <div
+            className="col-lg-4"
+            data-aos="zoom-out-top"
+            data-aos-delay="300"
+          >
             <div className="service-item">
               <i className="fas fa-window-maximize"></i>
-              <h3>Fabricación de ventanas PVC</h3>
+              <h3>Fabricación</h3>
               <p>
                 Ofrecemos ventanas de PVC de alta calidad, duraderas y con
                 excelentes propiedades aislantes. Diseñadas a medida para tus
@@ -33,7 +37,11 @@ export const Servicios = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4" data-aos="zoom-out-top" data-aos-delay="450">
+          <div
+            className="col-md-4"
+            data-aos="zoom-out-top"
+            data-aos-delay="450"
+          >
             <div className="service-item">
               <i className="fas fa-tools"></i>
               <h3>Instalación</h3>
@@ -44,7 +52,11 @@ export const Servicios = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4" data-aos="zoom-out-top" data-aos-delay="600">
+          <div
+            className="col-md-4"
+            data-aos="zoom-out-top"
+            data-aos-delay="600"
+          >
             <div className="service-item">
               <i className="fas fa-tools"></i>
               <h3>Reparación</h3>
@@ -56,6 +68,7 @@ export const Servicios = () => {
             </div>
           </div>
         </div>
+      </div>
     </section>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import slider1 from "../../assets/slider_1.png";
-import slider2 from "../../assets/slider1.png";
+import slider1 from "../../assets/slider1.png";
+import slider2 from "../../assets/slider2.png";
 import slider3 from "../../assets/slider3.png";
 import "./carousel.css";
 import Carousel from "react-bootstrap/Carousel";
@@ -19,7 +19,7 @@ export const CarouselTermisur = () => {
   };
 
   return (
-    <Carousel activeIndex={activeIndex} onSelect={handleSelect} fade interval={4000}>
+    <Carousel activeIndex={activeIndex} onSelect={handleSelect}  interval={4000}>
       {slides.map((slide, index) => (
         <Carousel.Item key={index}>
           <img
