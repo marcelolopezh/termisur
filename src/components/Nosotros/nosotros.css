@@ -1,0 +1,42 @@
+/* Estilos generales de la sección de equipo */
+#team {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+}
+
+.team-member-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member-position {
+    font-size: 16px;
+    color: #777;
+}

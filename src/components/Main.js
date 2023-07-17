@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import { CarouselTermisur } from "./Carousel/CarouselTermisur";
 import { Footer } from "./Footer/Footer";
 import { NavbarTop } from "./NavbarTop";
+import { Nosotros } from "./Nosotros/Nosotros";
 import { Servicios } from "./Servicios/Servicios";
 
 export const Main = () => {
@@ -20,8 +21,10 @@ export const Main = () => {
       <div id="servicios">
         <Servicios />
       </div>
-      
-      <Footer></Footer>
+      <div id="nosotros">
+        <Nosotros/>
+      </div>
+      <Footer id="contacto"></Footer>
     </Container>
   );
 };

@@ -30,7 +30,11 @@ export const NavbarTop = ({ handleClickScroll }) => {
             >
               Inicio
             </Nav.Link>
-            <Nav.Link href="#" className="mx-3 hover-underline-animation fs-6">
+            <Nav.Link
+              href="#"
+              className="mx-3 hover-underline-animation fs-6"
+              onClick={() => handleClickScroll("nosotros")}
+            >
               Quienes Somos
             </Nav.Link>
             <Nav.Link
