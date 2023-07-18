@@ -1,0 +1,21 @@
+.slide-text-enter {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.slide-text-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.slide-text-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.slide-text-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
