@@ -49,3 +49,25 @@ h5 {
   color: white;
 }
 
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ff7e2b;
+  color: #fff;
+  border-radius: 75%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  opacity: 0.7;
+}
+
+.scroll-top-button:hover {
+  opacity: 1;
+}

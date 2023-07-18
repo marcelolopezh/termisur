@@ -8,7 +8,7 @@ export const Servicios = () => {
   }, []);
 
   return (
-    <section id="services">
+    <section id="services" className="full-height-section">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -28,7 +28,7 @@ export const Servicios = () => {
             data-aos-delay="300"
           >
             <div className="service-item">
-              <i className="fas fa-window-maximize"></i>
+              <i className="fas fa-hammer"></i>
               <h3>Fabricación</h3>
               <p>
                 Ofrecemos ventanas de PVC de alta calidad, duraderas y con
@@ -43,7 +43,7 @@ export const Servicios = () => {
             data-aos-delay="450"
           >
             <div className="service-item">
-              <i className="fas fa-tools"></i>
+              <i class="fas fa-house"></i>{" "}
               <h3>Instalación</h3>
               <p>
                 Nuestro equipo de profesionales se encarga de la instalación
@@ -58,7 +58,7 @@ export const Servicios = () => {
             data-aos-delay="600"
           >
             <div className="service-item">
-              <i className="fas fa-tools"></i>
+              <i className="fas fa-toolbox"></i>
               <h3>Reparación</h3>
               <p>
                 Brindamos servicios de reparación de ventanas termopanel,

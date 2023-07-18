@@ -33,7 +33,7 @@ export const CarouselTermisur = () => {
               <CSSTransition classNames="slide-text" timeout={3000}>
                 <Carousel.Caption>
                   <h1 className="subTextSlider">{slide.title.toUpperCase()}</h1>
-                  <h4 className="subTextSlider">{slide.description}</h4>
+                  <h5 className="subTextSlider">{slide.description}</h5>
                 </Carousel.Caption>
               </CSSTransition>
             )}
@@ -48,16 +48,16 @@ const slides = [
   {
     image: slider1,
     title: "Calidad y Eficiencia",
-    description: "Transformamos tu hogar en un espacio confortable y energéticamente eficiente."
+    description: "Transformamos tu hogar en un espacio energéticamente eficiente."
   },
   {
     image: slider2,
     title: "A medida para tus necesidades",
-    description: "Nos comprometemos con brindar soluciones personalizadas y duraderas."
+    description: "Nos comprometemos a brindar soluciones personalizadas y duraderas."
   },
   {
     image: slider3,
     title: "Expertos en aislamiento térmico y acústico",
-    description: "Descubre el confort y tranquilidad que ofrecen nuestras ventanas termopanel."
+    description: "Descubre el confort y tranquilidad que ofrecen nuestras ventanas."
   }
 ];

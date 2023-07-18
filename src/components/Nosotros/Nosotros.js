@@ -11,7 +11,7 @@ export const Nosotros = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container-fluid team full-height-section">
       <div className="row">
         <h2 className="section-title">Nuestro Equipo</h2>
         <div

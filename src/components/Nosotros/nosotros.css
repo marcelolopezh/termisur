@@ -1,6 +1,8 @@
-/* Estilos generales de la sección de equipo */
-#team {
-    padding: 80px 0;
+.team {
+    padding: 40px 0;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .section-title {
@@ -9,6 +11,7 @@
 }
 
 .team-member {
+    background-color: rgb(242, 242, 242);
     text-align: center;
     padding: 20px;
     border-radius: 4px;

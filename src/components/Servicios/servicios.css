@@ -1,23 +1,25 @@
 #services {
-    padding: 80px 0;
-    background-color: #eeeeee;
+    padding: 40px 0;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .service-item {
-    width: 360px;
-    height: 360px;
+    border-top: 10px outset #ff7e2b;
+
+    height: 390px;
     text-align: center;
     margin-bottom: 40px;
     padding: 40px;
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 20px 10px 10px rgba(69, 219, 9, 0.1);
     /*clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);*/
 }
 
 .service-item i {
     font-size: 48px;
-    color: rgb(14, 178, 53);
+    color: #fdd808;
     margin-bottom: 20px;
 }
 
