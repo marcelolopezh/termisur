@@ -33,8 +33,8 @@ export const NavbarTop = ({ handleClickScroll }) => {
 
             <Nav.Link
               href="#"
-              className="mx-3 hover-underline-animation fs-6"
-              onClick={() => handleClickScroll("servicios")}
+              className="mx-3 hover-underline-animation "
+              onClick={() => handleClickScroll("seccion-servicios")}
             >
               Servicios
             </Nav.Link>
@@ -42,7 +42,7 @@ export const NavbarTop = ({ handleClickScroll }) => {
             <Nav.Link
               href="#"
               className="mx-3 hover-underline-animation fs-6"
-              onClick={() => handleClickScroll("clientes")}
+              onClick={() => handleClickScroll("seccion-clientes")}
             >
               Clientes
             </Nav.Link>
@@ -50,7 +50,7 @@ export const NavbarTop = ({ handleClickScroll }) => {
             <Nav.Link
               href="#"
               className="mx-3 hover-underline-animation fs-6"
-              onClick={() => handleClickScroll("nosotros")}
+              onClick={() => handleClickScroll("seccion-nosotros")}
             >
               Quienes Somos
             </Nav.Link>
@@ -58,7 +58,7 @@ export const NavbarTop = ({ handleClickScroll }) => {
             <Nav.Link
               href="#"
               className="mx-3 hover-underline-animation fs-6"
-              onClick={() => handleClickScroll("contacto")}
+              onClick={() => handleClickScroll("seccion-contacto")}
             >
               Contáctenos
             </Nav.Link>

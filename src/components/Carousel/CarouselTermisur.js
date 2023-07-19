@@ -52,7 +52,7 @@ const slides = [
   },
   {
     image: slider2,
-    title: "A medida para tus necesidades",
+    title: "Compromiso",
     description: "Nos comprometemos a brindar soluciones personalizadas y duraderas."
   },
   {

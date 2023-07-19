@@ -18,18 +18,25 @@ export const Main = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Desplazamiento suave
+      behavior: "smooth",
     });
   };
 
   const handleClickScroll = (elementSelected) => {
     const element = document.getElementById(elementSelected);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      let yOffset = -60; // Valor predeterminado para PC
+      console.log(window.innerWidth)
+      if (window.innerWidth <= 767) {
+        // Dispositivos móviles con ancho de pantalla igual o menor a 767px
+        yOffset = -300; // Ajusta este valor según sea necesario para dispositivos móviles
+      }
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
-  // Agrega el evento de scroll al montar el componente
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -41,16 +48,16 @@ export const Main = () => {
     <Container fluid id="inicio">
       <NavbarTop handleClickScroll={handleClickScroll} />
       <CarouselTermisur />
-      <div id="servicios">
+      <div id="seccion-servicios">
         <Servicios />
       </div>
-      <div id="clientes">
+      <div id="seccion-clientes">
         <Clientes />
       </div>
-      <div id="nosotros">
+      <div id="seccion-nosotros">
         <Nosotros />
       </div>
-      <Footer id="contacto"></Footer>
+      <Footer id="seccion-contacto"></Footer>
       {showButton && (
         <button className="scroll-top-button" onClick={scrollToTop}>
           <i className="fas fa-arrow-up"></i>
