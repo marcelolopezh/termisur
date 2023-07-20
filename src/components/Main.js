@@ -50,12 +50,14 @@ export const Main = () => {
     <Container fluid id="inicio">
       <NavbarTop handleClickScroll={handleClickScroll} />
       <CarouselTermisur />
-      <Proyectos/>
       <div id="seccion-servicios">
         <Servicios />
       </div>
+      <div id="proyectos">
+        <Proyectos />
+      </div>
       <DividerTriangle />
-      <div id="seccion-clientes" style={{marginBottom:"2rem"}}>
+      <div id="seccion-clientes" style={{ marginBottom: "2rem" }}>
         <Clientes />
       </div>
       <DividerTriangle />
