@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/termisur/static/css/main.a5f4f328.css",
-    "main.js": "/termisur/static/js/main.7ca53dcd.js",
+    "main.css": "/termisur/static/css/main.12f57889.css",
+    "main.js": "/termisur/static/js/main.3461bc39.js",
     "static/media/slider1.png": "/termisur/static/media/slider1.1d47b711af86d2582c5e.png",
     "static/media/slider2.png": "/termisur/static/media/slider2.f80f566d4a3242e35f85.png",
     "static/media/slider3.png": "/termisur/static/media/slider3.9c4c4d4bd3293b9c2e50.png",
@@ -18,11 +18,11 @@
     "static/media/fa-v4compatibility.ttf": "/termisur/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/termisur/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/termisur/index.html",
-    "main.a5f4f328.css.map": "/termisur/static/css/main.a5f4f328.css.map",
-    "main.7ca53dcd.js.map": "/termisur/static/js/main.7ca53dcd.js.map"
+    "main.12f57889.css.map": "/termisur/static/css/main.12f57889.css.map",
+    "main.3461bc39.js.map": "/termisur/static/js/main.3461bc39.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5f4f328.css",
-    "static/js/main.7ca53dcd.js"
+    "static/css/main.12f57889.css",
+    "static/js/main.3461bc39.js"
   ]
 }
