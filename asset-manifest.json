@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/termisur/static/css/main.12f57889.css",
-    "main.js": "/termisur/static/js/main.3461bc39.js",
-    "static/media/slider1.png": "/termisur/static/media/slider1.1d47b711af86d2582c5e.png",
-    "static/media/slider2.png": "/termisur/static/media/slider2.f80f566d4a3242e35f85.png",
-    "static/media/slider3.png": "/termisur/static/media/slider3.9c4c4d4bd3293b9c2e50.png",
+    "main.css": "/termisur/static/css/main.f7cc7288.css",
+    "main.js": "/termisur/static/js/main.4da68fbf.js",
+    "static/media/slider1.png": "/termisur/static/media/slider1.9f2e1743e0ff5142e6b4.png",
+    "static/media/slider3.png": "/termisur/static/media/slider3.0701bbf771c3fe721745.png",
+    "static/media/slider4.png": "/termisur/static/media/slider4.a5860b4bc82f79c6e88b.png",
+    "static/media/slider2.png": "/termisur/static/media/slider2.34abca3b66daa41d397d.png",
+    "static/media/slider5.png": "/termisur/static/media/slider5.d2ccf31f65350acc7a9c.png",
     "static/media/testimonio1.png": "/termisur/static/media/testimonio1.8b8e22eda5f70ffe691e.png",
     "static/media/testimonio2.png": "/termisur/static/media/testimonio2.6f371b1528dd7cd8e486.png",
     "static/media/fa-solid-900.ttf": "/termisur/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
@@ -18,11 +20,11 @@
     "static/media/fa-v4compatibility.ttf": "/termisur/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/termisur/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/termisur/index.html",
-    "main.12f57889.css.map": "/termisur/static/css/main.12f57889.css.map",
-    "main.3461bc39.js.map": "/termisur/static/js/main.3461bc39.js.map"
+    "main.f7cc7288.css.map": "/termisur/static/css/main.f7cc7288.css.map",
+    "main.4da68fbf.js.map": "/termisur/static/js/main.4da68fbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.12f57889.css",
-    "static/js/main.3461bc39.js"
+    "static/css/main.f7cc7288.css",
+    "static/js/main.4da68fbf.js"
   ]
 }
