@@ -27,7 +27,6 @@ export async function getListadoCarpeta(folder) {
 }
 
 export async function getListadoImagenesCarpeta(folder) {
-  console.log("folder", folder);
   const listRef = ref(storage, folder);
   return await listAll(listRef);
 }

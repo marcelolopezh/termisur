@@ -16,7 +16,6 @@ export const Proyectos = () => {
   }, []);
 
   const handleTabClick = (eventKey) => {
-    console.log(eventKey)
     setActiveCategory(eventKey);
   };
 

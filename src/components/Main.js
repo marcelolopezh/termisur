@@ -28,7 +28,6 @@ export const Main = () => {
     const element = document.getElementById(elementSelected);
     if (element) {
       let yOffset = -60; // Valor predeterminado para PC
-      console.log(window.innerWidth);
       if (window.innerWidth <= 767) {
         // Dispositivos móviles con ancho de pantalla igual o menor a 767px
         yOffset = -300; // Ajusta este valor según sea necesario para dispositivos móviles
