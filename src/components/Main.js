@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import { CarouselTermisur } from "./Carousel/CarouselTermisur";
 import { Clientes } from "./Clientes/Clientes";
+import { DividerTriangle } from "./Dividers/DividerTriangle";
 import { Footer } from "./Footer/Footer";
 import { NavbarTop } from "./NavbarTop";
 import { Nosotros } from "./Nosotros/Nosotros";
+import { Proyectos } from "./Proyectos/Proyectos";
 import { Servicios } from "./Servicios/Servicios";
 
 export const Main = () => {
@@ -26,7 +28,7 @@ export const Main = () => {
     const element = document.getElementById(elementSelected);
     if (element) {
       let yOffset = -60; // Valor predeterminado para PC
-      console.log(window.innerWidth)
+      console.log(window.innerWidth);
       if (window.innerWidth <= 767) {
         // Dispositivos móviles con ancho de pantalla igual o menor a 767px
         yOffset = -300; // Ajusta este valor según sea necesario para dispositivos móviles
@@ -48,12 +50,15 @@ export const Main = () => {
     <Container fluid id="inicio">
       <NavbarTop handleClickScroll={handleClickScroll} />
       <CarouselTermisur />
+      <Proyectos/>
       <div id="seccion-servicios">
         <Servicios />
       </div>
-      <div id="seccion-clientes">
+      <DividerTriangle />
+      <div id="seccion-clientes" style={{marginBottom:"2rem"}}>
         <Clientes />
       </div>
+      <DividerTriangle />
       <div id="seccion-nosotros">
         <Nosotros />
       </div>

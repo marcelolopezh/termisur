@@ -19,7 +19,7 @@ h2 {
 }
 
 .testimonial {
-  background-color: rgb(252, 252, 252);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 6px;
   padding: 40px;
   text-align: center;

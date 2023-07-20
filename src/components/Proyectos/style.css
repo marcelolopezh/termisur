@@ -1,0 +1,11 @@
+.row-custom {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.col-lg-4-custom {
+  flex: 0 0 50%;
+  /* Para que cada columna ocupe el 50% del ancho del contenedor (2 columnas en total) */
+  padding: 0.5rem;
+}

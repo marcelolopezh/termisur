@@ -30,6 +30,7 @@ export const Clientes = () => {
               transitionTime={500}
               swipeScrollTolerance={40}
               className="testimonial-carousel"
+              style={{backgroundColor:"red"}}
             >
               <div className="testimonial" data-aos="fade-up">
                 <div className="row">
