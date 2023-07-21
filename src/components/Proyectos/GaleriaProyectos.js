@@ -4,7 +4,7 @@ import { ref, listAll, getDownloadURL } from "firebase/storage";
 import { Spinner } from "react-bootstrap";
 import "./style.css";
 import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
+import "./galleryStyle.scss";
 
 export const GaleriaProyectos = ({ categoria }) => {
   const [imagenes, setImagenes] = useState([]);
@@ -52,20 +52,13 @@ export const GaleriaProyectos = ({ categoria }) => {
 
   return (
     <div>
-      <div
-        className="row m-5"
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
-      >
+      <div>
         {loading && loadingImgs ? (
           <Spinner animation="border" role="status" className="m-auto">
             <span className="visually-hidden">Cargando...</span>
           </Spinner>
         ) : (
-          <ImageGallery items={imagesArray} thumbnailPosition="left"/>
+          <ImageGallery items={imagesArray} thumbnailPosition="left" />
         )}
       </div>
     </div>
