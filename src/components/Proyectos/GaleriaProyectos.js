@@ -51,19 +51,17 @@ export const GaleriaProyectos = ({ categoria }) => {
           imagenes.map((url, index) => (
             <div
               key={`image-${index}`}
-              style={{
-                flex: "0 0 200px",
-                marginBottom: "10px",
-                maxHeight: "300px",
-                overflow: "hidden",
-                cursor: "pointer",
-                textAlign: "center"
-              }}
+              className="galeriaProyectos"
               onClick={() => openModal(index)}
             >
               <img
-              className="rounder text-center"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                className="rounder text-center"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  border: "2px solid #ff7e2b",
+                }}
                 src={url}
                 alt={`Imagen ${index + 1}`}
               />

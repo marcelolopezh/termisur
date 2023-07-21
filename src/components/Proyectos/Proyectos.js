@@ -10,7 +10,10 @@ export const Proyectos = () => {
   useEffect(() => {
     getListadoCarpeta("").then((resp) => {
       resp.prefixes.forEach((item) => {
-        setProyectos((prevProyectos) => [...prevProyectos, item._location.path_]);
+        setProyectos((prevProyectos) => [
+          ...prevProyectos,
+          item._location.path_,
+        ]);
       });
     });
   }, []);
@@ -20,18 +23,21 @@ export const Proyectos = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Nuetros Proyectos</h2>
+    <div className="container-fluid containerProyectos">
+      <h2>Nuestros Proyectos</h2>
 
       <Nav
         fill
         variant="tabs"
         activeKey={activeCategory}
         onSelect={handleTabClick}
+        className="tabProyectos"
       >
         {proyectos.map((element) => (
-          <Nav.Item key={element}>
-            <Nav.Link eventKey={element}>{element}</Nav.Link>
+          <Nav.Item key={element} className="tabProyectos">
+            <Nav.Link eventKey={element} className="tabProyectos">
+              {element}
+            </Nav.Link>
           </Nav.Item>
         ))}
       </Nav>

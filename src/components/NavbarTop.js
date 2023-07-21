@@ -9,7 +9,7 @@ export const NavbarTop = ({ handleClickScroll }) => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg" data-bs-theme="dark" >
         <Navbar.Brand className="mx-5">
           <img src={Logo} width="90px" alt="..."></img>
         </Navbar.Brand>

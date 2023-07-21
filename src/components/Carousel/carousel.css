@@ -20,8 +20,17 @@
     transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
-@media (max-width: 767px) {
-    .subTextSlider {
-        font-size: 1.2em;
+
+/* Estilos para dispositivos móviles (pantallas de hasta 768px) */
+@media (max-width: 768px) {
+    .d-block.w-100 {
+      /* Ajustar el tamaño de la imagen para que ocupe toda la pantalla */
+      width: 100%;
     }
-}
+  
+    .subTextSlider {
+      /* Ajustar el tamaño del texto */
+      font-size: 18px;
+    }
+  }
+  
