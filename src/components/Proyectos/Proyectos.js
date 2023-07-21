@@ -23,7 +23,7 @@ export const Proyectos = () => {
   };
 
   return (
-    <div className="container-fluid containerProyectos">
+    <div className="container-fluid containerProyectos pt-5 ">
       <h2>Nuestros Proyectos</h2>
 
       <Nav

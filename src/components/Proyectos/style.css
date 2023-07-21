@@ -1,6 +1,7 @@
-/* style.css */
+#containerProyectos {
+  padding-top: 10rem;
+}
 
-/* Estilo para el modal */
 .modal-max-height .modal-dialog {
   max-width: 90%;
 }

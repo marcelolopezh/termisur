@@ -1,5 +1,9 @@
 #clientes {
-  background-color: #ffffff;
+  padding-top:4rem;
+  background-color: #fcfcfc;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-top: 0.5rem solid #ff7e2b;
 }
 
 .container {
@@ -10,7 +14,7 @@
 h2 {
   text-align: center;
   font-size: 24px;
-  color: #333;
+  color: rgb(10, 10, 10);
   margin-bottom: 40px;
 }
 
@@ -19,7 +23,7 @@ h2 {
 }
 
 .testimonial {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   border-radius: 6px;
   padding: 40px;
   text-align: center;
@@ -47,13 +51,13 @@ h2 {
 
 .testimonial-content p {
   font-size: 18px;
-  color: #333;
+  color: rgb(34, 34, 34);
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .testimonial-content h3 {
   font-size: 16px;
-  color: #666;
+  color: rgb(79, 79, 79);
   margin: 0;
 }

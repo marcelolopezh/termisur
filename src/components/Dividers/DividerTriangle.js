@@ -6,7 +6,7 @@ export const DividerTriangle = () => {
       className="svg-separator sep12"
       viewBox="0 0 1600 200"
       data-height="200"
-      style={{ display: "block", marginTop: "-3rem" }}
+      style={{ display: "block", marginTop: "-3rem"}}
     >
       <polygon
         className=""

@@ -55,14 +55,12 @@ export const Main = () => {
       <div id="proyectos">
         <Proyectos />
       </div>
-      <DividerTriangle />
       <div id="seccion-clientes" style={{ marginBottom: "2rem" }}>
         <Clientes />
       </div>
       <DividerTriangle />
-      <div id="seccion-nosotros">
-        <Nosotros />
-      </div>
+
+      <div id="seccion-nosotros">{/**<Nosotros /> */}</div>
       <Footer id="seccion-contacto"></Footer>
       {showButton && (
         <button className="scroll-top-button" onClick={scrollToTop}>
