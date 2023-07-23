@@ -33,7 +33,7 @@ export const CarouselTermisur = () => {
           <TransitionGroup>
             {activeIndex === index && isImageLoaded && (
               <CSSTransition classNames="slide-text" timeout={3000}>
-                <Carousel.Caption>
+                <Carousel.Caption className="slide-caption">
                   <h1 className="subTextSlider">{slide.title.toUpperCase()}</h1>
                   <h5 className="subTextSlider">{slide.description}</h5>
                 </Carousel.Caption>
@@ -62,19 +62,16 @@ const slides = [
   {
     image: slider3,
     title: "Expertos en aislamiento térmico y acústico",
-    description:
-      "Descubre el confort y tranquilidad que ofrecen nuestras ventanas.",
+    description: "Confort y tranquilidad que ofrecen nuestras ventanas.",
   },
   {
     image: slider4,
-    title: "Expertos en aislamiento térmico y acústico",
-    description:
-      "Descubre el confort y tranquilidad que ofrecen nuestras ventanas.",
+    title: "Variedad de Estilos",
+    description: "Encuentra el diseño perfecto para tus ventanas.",
   },
   {
     image: slider5,
-    title: "Expertos en aislamiento térmico y acústico",
-    description:
-      "Descubre el confort y tranquilidad que ofrecen nuestras ventanas.",
+    title: "Máximo Rendimiento",
+    description: "Ventanas que combinan eficiencia y elegancia.",
   },
 ];

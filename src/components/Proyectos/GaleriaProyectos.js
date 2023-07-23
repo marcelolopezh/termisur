@@ -14,6 +14,10 @@ export const GaleriaProyectos = ({ categoria }) => {
 
   useEffect(() => {
     setLoading(true);
+
+    if(categoria === null || categoria === undefined){
+      setLoading(false)
+    }
     const storageRef = ref(storage, categoria);
     listAll(storageRef)
       .then((res) => {
@@ -58,7 +62,7 @@ export const GaleriaProyectos = ({ categoria }) => {
             <span className="visually-hidden">Cargando...</span>
           </Spinner>
         ) : (
-          <ImageGallery items={imagesArray} thumbnailPosition="left" />
+          <ImageGallery items={imagesArray} thumbnailPosition="top" />
         )}
       </div>
     </div>

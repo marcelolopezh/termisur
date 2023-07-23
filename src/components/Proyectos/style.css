@@ -88,3 +88,12 @@ a.tabProyectos.nav-link.active {
 a.tabProyectos.nav-link:hover {
   background-color: #f16108d3;
 }
+
+.image-gallery-thumbnail {
+  width: 120px
+}
+
+.image-gallery-thumbnail img {
+  width: auto;
+  height: 75px;
+}

@@ -20,6 +20,9 @@
     transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
+.slide-caption{
+  background-color: rgba(6, 6, 6, 0.502);
+}
 
 /* Estilos para dispositivos móviles (pantallas de hasta 768px) */
 @media (max-width: 768px) {

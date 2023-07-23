@@ -3,14 +3,11 @@ import "./rrss.css";
 export const RRSS = () => {
   return (
     <div class="floating-social-buttons">
-      <a href="https://twitter.com/TuPagina" className="wsp">
+      <a href="https://w.app/ZbxVfl" className="wsp">
         <i class="fab fa-whatsapp "></i>
-      </a>
-      <a href="https://www.facebook.com/TuPagina" className="facebook">
-        <i class="fab fa-facebook-f "></i>
-      </a>
+      </a>  
 
-      <a href="https://www.instagram.com/TuPagina" className="instagram">
+      <a href="https://www.instagram.com/termisur/" className="instagram">
         <i class="fab fa-instagram "></i>
       </a>
     </div>
