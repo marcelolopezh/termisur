@@ -10,7 +10,7 @@
     width: 90%;
     margin: 0 auto; /* Esto centra horizontalmente */
     text-align: center; /* Esto centra el contenido del elemento */
-    height: 360px;
+    min-height: 360px;
     text-align: center;
     margin-bottom: 40px;
     padding: 40px;
