@@ -5,7 +5,7 @@ import { Clientes } from "./Clientes/Clientes";
 import { DividerTriangle } from "./Dividers/DividerTriangle";
 import { Footer } from "./Footer/Footer";
 import { NavbarTop } from "./NavbarTop";
-import { Nosotros } from "./Nosotros/Nosotros";
+import { RRSS } from "./RRSS/RRSS";
 import { Proyectos } from "./Proyectos/Proyectos";
 import { Servicios } from "./Servicios/Servicios";
 
@@ -47,6 +47,7 @@ export const Main = () => {
 
   return (
     <Container fluid id="inicio">
+      <RRSS />
       <NavbarTop handleClickScroll={handleClickScroll} />
       <CarouselTermisur />
       <div id="seccion-servicios">
