@@ -18,6 +18,12 @@ export const Proyectos = () => {
     });
   }, []);
 
+  useEffect(() => {
+    if (proyectos.length > 0) {
+      setActiveCategory(proyectos[0]);
+    }
+  }, [proyectos]);
+
   const handleTabClick = (eventKey) => {
     setActiveCategory(eventKey);
   };

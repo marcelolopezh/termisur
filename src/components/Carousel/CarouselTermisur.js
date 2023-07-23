@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { useMediaQuery } from "@react-hook/media-query";
 import slider1 from "../../assets/slider1.png";
 import slider2 from "../../assets/slider2.png";
 import slider3 from "../../assets/slider3.png";
@@ -20,12 +21,20 @@ export const CarouselTermisur = () => {
     setIsImageLoaded(true);
   };
 
+  const mobileStyle = {
+    height: "550px",
+    // Aquí puedes agregar más estilos específicos para dispositivos móviles
+  };
+
+  // Utilizar la función useMediaQuery para detectar si se está en un dispositivo móvil
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <Carousel activeIndex={activeIndex} onSelect={handleSelect} interval={4000}>
       {slides.map((slide, index) => (
         <Carousel.Item key={index}>
           <img
-            className="d-block w-100"
+            style={isMobile ? mobileStyle : {}}
             src={slide.image}
             alt={`Slide ${index + 1}`}
             onLoad={handleImageLoad}
