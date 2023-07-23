@@ -6,7 +6,7 @@ import { DividerTriangle } from "./Dividers/DividerTriangle";
 import { Footer } from "./Footer/Footer";
 import { NavbarTop } from "./NavbarTop";
 import { RRSS } from "./RRSS/RRSS";
-// eslint-disable-next-line 
+// eslint-disable-next-line
 import { Proyectos } from "./Proyectos/Proyectos";
 import { Servicios } from "./Servicios/Servicios";
 
@@ -54,10 +54,9 @@ export const Main = () => {
       <div id="seccion-servicios">
         <Servicios />
       </div>
-      {/*<div id="proyectos">
+      <div id="proyectos">
         <Proyectos />
       </div>
-      */}
       <div id="seccion-clientes" style={{ marginBottom: "2rem" }}>
         <Clientes />
       </div>
