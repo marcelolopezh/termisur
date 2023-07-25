@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/termisur/static/css/main.bd50776b.css",
-    "main.js": "/termisur/static/js/main.a99eb78a.js",
-    "static/media/slider1.png": "/termisur/static/media/slider1.9f2e1743e0ff5142e6b4.png",
-    "static/media/slider3.png": "/termisur/static/media/slider3.0701bbf771c3fe721745.png",
-    "static/media/slider4.png": "/termisur/static/media/slider4.a5860b4bc82f79c6e88b.png",
-    "static/media/slider2.png": "/termisur/static/media/slider2.34abca3b66daa41d397d.png",
-    "static/media/slider5.png": "/termisur/static/media/slider5.d2ccf31f65350acc7a9c.png",
-    "static/media/testimonio1.png": "/termisur/static/media/testimonio1.8b8e22eda5f70ffe691e.png",
-    "static/media/testimonio2.png": "/termisur/static/media/testimonio2.6f371b1528dd7cd8e486.png",
+    "main.css": "/termisur/static/css/main.d94ad669.css",
+    "main.js": "/termisur/static/js/main.a0e6bbed.js",
+    "static/media/slider1.png": "/termisur/static/media/slider1.a9dd98980830e42a2bcf.png",
+    "static/media/slider3.png": "/termisur/static/media/slider3.8cbd92efd03b86c38c85.png",
+    "static/media/slider4.png": "/termisur/static/media/slider4.a8cb6962303aed550457.png",
+    "static/media/slider2.png": "/termisur/static/media/slider2.460d6e962893a7b292b6.png",
+    "static/media/javierbeltran.png": "/termisur/static/media/javierbeltran.54879bccfd21ced1ed82.png",
+    "static/media/slider5.png": "/termisur/static/media/slider5.75593a969295dc0f47cb.png",
+    "static/media/ebnervinibaldo.png": "/termisur/static/media/ebnervinibaldo.8b8e22eda5f70ffe691e.png",
     "static/media/fa-solid-900.ttf": "/termisur/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/anavasquez.png": "/termisur/static/media/anavasquez.f7bd8e2271f7b858eab2.png",
     "static/media/fa-brands-400.ttf": "/termisur/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/fa-solid-900.woff2": "/termisur/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
     "static/media/fa-brands-400.woff2": "/termisur/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
@@ -19,11 +20,11 @@
     "static/media/fa-v4compatibility.ttf": "/termisur/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/termisur/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/termisur/index.html",
-    "main.bd50776b.css.map": "/termisur/static/css/main.bd50776b.css.map",
-    "main.a99eb78a.js.map": "/termisur/static/js/main.a99eb78a.js.map"
+    "main.d94ad669.css.map": "/termisur/static/css/main.d94ad669.css.map",
+    "main.a0e6bbed.js.map": "/termisur/static/js/main.a0e6bbed.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd50776b.css",
-    "static/js/main.a99eb78a.js"
+    "static/css/main.d94ad669.css",
+    "static/js/main.a0e6bbed.js"
   ]
 }
