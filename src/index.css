@@ -4,7 +4,6 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code,
@@ -18,7 +17,7 @@ h5 {
 
 
 .subTextSlider {
-  text-shadow: rgb(0, 0, 0) 20px 0 10px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
 .hover-underline-animation {

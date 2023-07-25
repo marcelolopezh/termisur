@@ -1,0 +1,64 @@
+$ig-small-screen: 768px !default;
+$ig-xsmall-screen: 480px !default;
+$ig-white: #fff !default;
+$ig-black: #000 !default;
+$ig-blue: #337ab7 !default;
+$ig-background-black: rgba(0, 0, 0, 0.4) !default;
+$ig-transparent: rgba(0, 0, 0, 0) !default;
+$ig-shadow: 0 2px 2px lighten($ig-black, 10%);
+
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ("-webkit-", "-moz-", "-ms-", "-o-", "") {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+// Import the default styles for react-image-gallery
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+// Rest of your existing styles ...
+
+// Add media queries to adjust the gallery size for different screens
+// Mobile devices
+@media (max-width: $ig-small-screen) {
+  .image-gallery-slide .image-gallery-image {
+  }
+
+  .image-gallery-left-nav,
+  .image-gallery-right-nav {
+    .image-gallery-svg {
+      height: 72px;
+      width: 36px;
+    }
+  }
+
+  .image-gallery-fullscreen-button,
+  .image-gallery-play-button {
+    padding: 15px;
+
+    .image-gallery-svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .image-gallery-thumbnail {
+    width: 81px; // 75px + 6px for border
+
+    .image-gallery-thumbnail-image {
+      vertical-align: middle;
+      width: 100%;
+      line-height: 0;
+    }
+  }
+
+  .image-gallery-thumbnail-label {
+    font-size: 0.8em;
+    line-height: 0.8em;
+  }
+
+  .image-gallery-index {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+}
+

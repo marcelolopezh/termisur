@@ -2,13 +2,25 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import { CarouselTermisur } from "./Carousel/CarouselTermisur";
 import { Clientes } from "./Clientes/Clientes";
+import { DividerTriangle } from "./Dividers/DividerTriangle";
 import { Footer } from "./Footer/Footer";
 import { NavbarTop } from "./NavbarTop";
-import { Nosotros } from "./Nosotros/Nosotros";
+import { RRSS } from "./RRSS/RRSS";
+// eslint-disable-next-line
+import { Proyectos } from "./Proyectos/Proyectos";
 import { Servicios } from "./Servicios/Servicios";
+import { ModalContacto } from "./ModalContacto/ModalContacto";
 
 export const Main = () => {
   const [showButton, setShowButton] = useState(true);
+
+  const [showModal, setShowModal] = useState(false);
+  const handleCloseModal = () => setShowModal(false);
+  const handleShowModal = () => {
+    console.log("show modal");
+    setShowModal(true);
+    console.log(showModal);
+  };
 
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -18,18 +30,24 @@ export const Main = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Desplazamiento suave
+      behavior: "smooth",
     });
   };
 
   const handleClickScroll = (elementSelected) => {
     const element = document.getElementById(elementSelected);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      let yOffset = -60; // Valor predeterminado para PC
+      if (window.innerWidth <= 767) {
+        // Dispositivos móviles con ancho de pantalla igual o menor a 767px
+        yOffset = -300; // Ajusta este valor según sea necesario para dispositivos móviles
+      }
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
-  // Agrega el evento de scroll al montar el componente
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -39,22 +57,35 @@ export const Main = () => {
 
   return (
     <Container fluid id="inicio">
-      <NavbarTop handleClickScroll={handleClickScroll} />
+      <RRSS />
+      <NavbarTop
+        handleClickScroll={handleClickScroll}
+        handleShowModal={handleShowModal}
+      />
       <CarouselTermisur />
-      <div id="servicios">
+      <div id="seccion-servicios">
         <Servicios />
       </div>
-      <div id="clientes">
+      <div id="proyectos">
+        <Proyectos />
+      </div>
+      <div id="seccion-clientes" style={{ marginBottom: "2rem" }}>
         <Clientes />
       </div>
-      <div id="nosotros">
-        <Nosotros />
-      </div>
-      <Footer id="contacto"></Footer>
+      <DividerTriangle />
+
+      <div id="seccion-nosotros">{/**<Nosotros /> */}</div>
+      <Footer id="seccion-contacto"></Footer>
       {showButton && (
         <button className="scroll-top-button" onClick={scrollToTop}>
           <i className="fas fa-arrow-up"></i>
         </button>
+      )}
+      {showModal && (
+        <ModalContacto
+          showModal={showModal}
+          handleCloseModal={handleCloseModal}
+        />
       )}
     </Container>
   );

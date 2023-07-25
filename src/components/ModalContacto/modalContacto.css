@@ -1,0 +1,36 @@
+/* Estilo para centrar el contenido del modal horizontal y verticalmente */
+.modalContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Asegura que el modal ocupe toda la altura de la pantalla */
+}
+
+/* Estilo para agregar separación entre íconos y textos */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Alinear a la izquierda */
+    margin-bottom: 5px;
+    /* Pequeña separación entre líneas */
+}
+
+.row a {
+    margin-right: 5px;
+    /* Ajusta el valor según el espaciado deseado */
+    display: flex;
+    align-items: center;
+    /* Centrar los íconos verticalmente */
+    text-decoration: none;
+    /* Eliminar subrayado del enlace */
+    color: #000;
+    /* Color del texto del enlace */
+}
+
+.row a:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último ícono */
+}

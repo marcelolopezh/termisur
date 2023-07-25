@@ -1,0 +1,99 @@
+#containerProyectos {
+  padding-top: 10rem;
+}
+
+.modal-max-height .modal-dialog {
+  max-width: 90%;
+}
+
+/* Estilo para las imágenes dentro del carousel */
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Media query para pantallas con un ancho máximo de 768px (por ejemplo, teléfonos móviles) */
+@media (max-width: 768px) {
+  .carousel .carousel-inner .carousel-item img {
+    max-width: 100%;
+    max-height: 100vh;
+    /* Ocupar toda la altura de la pantalla */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+  }
+}
+
+
+/* styles.css (o el nombre que le hayas dado a tu archivo CSS) */
+
+.containerProyectos {
+  /* Estilos para el fondo parallax */
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-repeat: repeat;
+
+  /* Estilos adicionales para el contenido dentro del contenedor */
+  padding: 20px;
+  color: white;
+  border-top: 0.5rem solid #ff7e2b;
+}
+
+/* Estilos específicos para el texto de los proyectos, puedes ajustarlos según tus necesidades */
+.proyecto-info {
+  /* Estilos para el contenido de los proyectos */
+  padding: 20px;
+  color: black;
+}
+
+.tabProyectos {
+  background-color: #ff7e2b;
+}
+
+.linkProyectos:hover {
+  background-color: rgb(207, 121, 60);
+}
+
+.galeriaProyectos {
+  flex: 0 0 200px;
+  margin-bottom: 10px;
+  max-height: "300px";
+  overflow: "hidden";
+  cursor: "pointer";
+  text-align: "center";
+}
+
+@media (max-width: 768px) {
+  .galeriaProyectos {
+    flex: none;
+  }
+}
+
+.tabProyectos:active {
+  background-color: red;
+}
+
+a.tabProyectos.nav-link.active {
+  background-color: #f16108d3;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: none
+}
+
+a.tabProyectos.nav-link:hover {
+  background-color: #f16108d3;
+}
+
+.image-gallery-thumbnail {
+  width: 120px
+}
+
+.image-gallery-thumbnail img {
+  width: auto;
+  height: 75px;
+}

@@ -1,0 +1,34 @@
+.floating-social-buttons {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    /* Ajusta esta propiedad para la distancia desde el borde izquierdo */
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.floating-social-buttons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    /* Puedes cambiar el color del ícono según tus preferencias */
+    font-size: 20px;
+}
+
+.facebook {
+    background-color: #007bff7e;
+    /* Puedes cambiar el color de fondo según tus preferencias */
+}
+
+.instagram {
+    background-color: #ff1a6e75;
+}
+
+.wsp {
+    background-color: #2ed84880;
+}
