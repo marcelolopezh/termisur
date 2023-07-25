@@ -94,6 +94,9 @@ export const Clientes = () => {
                         </span>
                       </blockquote>
                       <hr />
+                      <span style={{ fontWeight: "bold" }}>
+                        Javier Beltrán
+                      </span>
                     </div>
                   </div>
                 </div>
