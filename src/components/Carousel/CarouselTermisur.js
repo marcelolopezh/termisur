@@ -26,6 +26,14 @@ export const CarouselTermisur = () => {
     // Aquí puedes agregar más estilos específicos para dispositivos móviles
   };
 
+  const mobileTextStyle = {
+    fontSize : "1.1rem"
+  }
+
+  const mobileSubTextStyle = {
+    fontSize : ".9rem"
+  }
+
   const desktopStyle = {
     maxHeight: "590px",
   };
@@ -47,8 +55,8 @@ export const CarouselTermisur = () => {
             {activeIndex === index && isImageLoaded && (
               <CSSTransition classNames="slide-text" timeout={3000}>
                 <Carousel.Caption className="slide-caption">
-                  <h1 className="subTextSlider">{slide.title.toUpperCase()}</h1>
-                  <h5 className="subTextSlider">{slide.description}</h5>
+                  <h1 style={isMobile ? mobileTextStyle : {}}>{slide.title.toUpperCase()}</h1>
+                  <h5 style={isMobile ? mobileSubTextStyle : {}}className="subTextSlider">{slide.description}</h5>
                 </Carousel.Caption>
               </CSSTransition>
             )}
