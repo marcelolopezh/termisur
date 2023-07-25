@@ -23,14 +23,14 @@ export const Clientes = () => {
             showArrows={false}
             infiniteLoop={true}
             autoPlay={true}
-            emulateTouch={true}
+            emulateTouch={false}
             showThumbs={false}
             showStatus={false}
             interval={5000}
-            transitionTime={500}
-            swipeScrollTolerance={40}
+            transitionTime={900}
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
             className="testimonial-carousel"
-            style={{ backgroundColor: "red" }}
           >
             <div className="testimonial" data-aos="fade-up">
               <div className="row">
