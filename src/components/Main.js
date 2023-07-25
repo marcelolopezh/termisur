@@ -9,9 +9,18 @@ import { RRSS } from "./RRSS/RRSS";
 // eslint-disable-next-line
 import { Proyectos } from "./Proyectos/Proyectos";
 import { Servicios } from "./Servicios/Servicios";
+import { ModalContacto } from "./ModalContacto/ModalContacto";
 
 export const Main = () => {
   const [showButton, setShowButton] = useState(true);
+
+  const [showModal, setShowModal] = useState(false);
+  const handleCloseModal = () => setShowModal(false);
+  const handleShowModal = () => {
+    console.log("show modal");
+    setShowModal(true);
+    console.log(showModal);
+  };
 
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -49,7 +58,10 @@ export const Main = () => {
   return (
     <Container fluid id="inicio">
       <RRSS />
-      <NavbarTop handleClickScroll={handleClickScroll} />
+      <NavbarTop
+        handleClickScroll={handleClickScroll}
+        handleShowModal={handleShowModal}
+      />
       <CarouselTermisur />
       <div id="seccion-servicios">
         <Servicios />
@@ -68,6 +80,12 @@ export const Main = () => {
         <button className="scroll-top-button" onClick={scrollToTop}>
           <i className="fas fa-arrow-up"></i>
         </button>
+      )}
+      {showModal && (
+        <ModalContacto
+          showModal={showModal}
+          handleCloseModal={handleCloseModal}
+        />
       )}
     </Container>
   );

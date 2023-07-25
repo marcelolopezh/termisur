@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "../assets/termisur-logo.png";
-import { ListUl, Share } from "react-bootstrap-icons";
+import { ListUl } from "react-bootstrap-icons";
 
-export const NavbarTop = ({ handleClickScroll }) => {
-  //eslint-disable-next-line
-  const [show, setShow] = useState(false);
+export const NavbarTop = ({ handleClickScroll, handleShowModal }) => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" data-bs-theme="dark" >
+      <Navbar collapseOnSelect expand="lg" data-bs-theme="dark">
         <Navbar.Brand className="mx-5">
           <img src={Logo} width="90px" alt="..."></img>
         </Navbar.Brand>
@@ -36,7 +34,7 @@ export const NavbarTop = ({ handleClickScroll }) => {
             >
               Servicios
             </Nav.Link>
-            
+
             <Nav.Link
               href="#"
               className="mx-3 hover-underline-animation "
@@ -53,23 +51,18 @@ export const NavbarTop = ({ handleClickScroll }) => {
               Clientes
             </Nav.Link>
 
-
             <Nav.Link
               href="#"
               className="mx-3 hover-underline-animation fs-6"
-              onClick={() => handleClickScroll("seccion-contacto")}
+              onClick={() => handleShowModal()}
             >
               Contáctenos
             </Nav.Link>
-            <Nav.Link href="#" className="mx-3 hover-underline-animation fs-6">
-              <Share />
+            <Nav.Link href="#" className="">
             </Nav.Link>
-           
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
-     
     </>
   );
 };

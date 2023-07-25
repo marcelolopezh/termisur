@@ -22,7 +22,7 @@ export const CarouselTermisur = () => {
   };
 
   const mobileStyle = {
-    height: "550px",
+    height: "400px",
     // Aquí puedes agregar más estilos específicos para dispositivos móviles
   };
 
