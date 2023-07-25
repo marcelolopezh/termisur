@@ -20,10 +20,9 @@ export const Clientes = () => {
         </div>
         <div>
           <Carousel
-            showArrows={false}
             infiniteLoop={true}
             autoPlay={true}
-            emulateTouch={false}
+            emulateTouch={true}
             showThumbs={false}
             showStatus={false}
             interval={5000}
@@ -41,7 +40,7 @@ export const Clientes = () => {
                   <div className="testimonial-content">
                     <div class="etiqueta-cita">
                       Reconocido en el mundo de la gastronomía y dueño de
-                      restaurantes construye un nuevo y maravillo local en
+                      restaurantes construye un nuevo y maravilloso local en
                       Nehuentue.
                       <blockquote>
                         <span
@@ -94,9 +93,7 @@ export const Clientes = () => {
                         </span>
                       </blockquote>
                       <hr />
-                      <span style={{ fontWeight: "bold" }}>
-                        Javier Beltrán
-                      </span>
+                      <span style={{ fontWeight: "bold" }}>Javier Beltrán</span>
                     </div>
                   </div>
                 </div>
