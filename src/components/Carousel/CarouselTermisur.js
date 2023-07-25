@@ -22,8 +22,12 @@ export const CarouselTermisur = () => {
   };
 
   const mobileStyle = {
-    height: "400px",
+    height: "340px",
     // Aquí puedes agregar más estilos específicos para dispositivos móviles
+  };
+
+  const desktopStyle = {
+    maxHeight: "590px",
   };
 
   // Utilizar la función useMediaQuery para detectar si se está en un dispositivo móvil
@@ -34,7 +38,7 @@ export const CarouselTermisur = () => {
       {slides.map((slide, index) => (
         <Carousel.Item key={index}>
           <img
-            style={isMobile ? mobileStyle : {}}
+            style={isMobile ? mobileStyle : desktopStyle}
             src={slide.image}
             alt={`Slide ${index + 1}`}
             onLoad={handleImageLoad}
