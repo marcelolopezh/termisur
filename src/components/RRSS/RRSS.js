@@ -1,14 +1,10 @@
 import "./rrss.css";
+import { apiwsp } from "../../assets/constants";
 
 export const RRSS = () => {
   return (
     <div className="floating-social-buttons">
-      <a
-        href="https://w.app/ZbxVfl"
-        className="wsp"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={apiwsp} className="wsp" target="_blank" rel="noreferrer">
         <i className="fab fa-whatsapp "></i>
       </a>
 

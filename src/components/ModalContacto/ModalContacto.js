@@ -1,6 +1,7 @@
 import Modal from "react-bootstrap/Modal";
 import { Button } from "react-bootstrap";
 import "./modalContacto.css";
+import { apiwsp } from "../../assets/constants";
 
 export const ModalContacto = ({ showModal, handleCloseModal }) => {
   return (
@@ -22,7 +23,7 @@ export const ModalContacto = ({ showModal, handleCloseModal }) => {
           continuación:
           <hr />
           <a
-            href="https://w.app/ZbxVfl"
+            href={apiwsp}
             style={{ fontSize: "1.4rem" }}
             target="_blank"
             rel="noreferrer"
@@ -53,7 +54,7 @@ export const ModalContacto = ({ showModal, handleCloseModal }) => {
           >
             <i className="fa fa-phone "></i>
             <span style={{ fontSize: "1rem", marginLeft: ".6rem" }}>
-             +569 8581 9870
+              +569 8581 9870
             </span>
           </a>
           <br></br>

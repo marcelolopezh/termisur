@@ -1,64 +1,102 @@
 #clientes {
-  padding-top:4rem;
+  padding-top: 4rem;
   background-color: #fcfcfc;
   background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   border-top: 0.5rem solid #ff7e2b;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-h2 {
-  text-align: center;
-  font-size: 24px;
-  color: rgb(10, 10, 10);
-  margin-bottom: 40px;
-}
-
-.testimonial-carousel .slider-wrapper {
-  overflow: visible;
-}
-
-.testimonial {
-  background-color: transparent;
-  border-radius: 6px;
-  padding: 40px;
-  text-align: center;
-  position: relative;
-  transition: transform 0.5s;
-}
-
-.testimonial:hover {
-  transform: translateY(-5px);
-}
-
-.testimonial .row {
+/* clientes.css */
+.card {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.testimonial img {
-  max-width: 200px;
-  max-height: 200px;
+.card img {
   border-radius: 50%;
-  margin-bottom: 20px;
+  width: 90px;
+  /* Ajusta el tamaño deseado para la imagen */
+  height: 90px;
+  /* Ajusta el tamaño deseado para la imagen */
   object-fit: cover;
-  margin-right: 20px;
+  margin-top: 20px;
+  /* Espacio entre la parte superior del card y la imagen */
 }
 
-.testimonial-content p {
-  font-size: 18px;
-  color: rgb(34, 34, 34);
-  line-height: 1.5;
-  margin-bottom: 20px;
+/* clientes.css */
+.card {
+  /* ... (código anterior) */
+  border: 1px solid #ccc;
+  /* Borde del card */
+  border-radius: 10px;
+  /* Bordes redondeados del card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra del card */
+  padding: 15px;
+  /* Espacio interno del card */
+  background-color: #f8f8f8;
+  /* Color de fondo del card */
 }
 
-.testimonial-content h3 {
-  font-size: 16px;
-  color: rgb(79, 79, 79);
-  margin: 0;
+.card-title {
+  font-size: 1.2rem;
+  /* Tamaño de fuente del título */
+  font-weight: bold;
+  /* Texto en negrita */
+  margin-bottom: 10px;
+  /* Espacio entre el título y la reseña/testimonio */
 }
 
+.card-subtitle {
+  font-size: 1rem;
+  /* Tamaño de fuente de la reseña (si existe) */
+  font-style: italic;
+  /* Texto en cursiva */
+  margin-bottom: 10px;
+  /* Espacio entre la reseña y el testimonio */
+
+}
+
+
+
+/* clientes.css */
+.card-text {
+  /* ... (código anterior) */
+  font-size: 1.0rem;
+  /* Tamaño de fuente del testimonio */
+  color: #333;
+  /* Color del texto del testimonio */
+  margin-top: 10px;
+  /* Espacio entre el testimonio y el borde inferior del card */
+  text-align: center;
+  /* Alinear el texto en el centro */
+  position: relative;
+  
+}
+
+.hr {
+  border: none;
+  /* Eliminar el borde predeterminado */
+  height: 1px;
+  /* Altura de la línea */
+  background-color: #ff7e2b;
+  color: #ff7e2b;
+
+  /* Color de la línea (puedes ajustar el color a tu gusto) */
+  margin: 20px 0;
+  /* Espacio vertical alrededor de la línea */
+  opacity: 0.5;
+  /* Opacidad de la línea (0.5 para un efecto más sutil) */
+}
+
+.subtitle{
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.testimonio{
+  color :rgba(0, 0, 0, 0.9);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

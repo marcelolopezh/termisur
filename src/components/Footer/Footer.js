@@ -13,10 +13,10 @@ export const Footer = () => {
         </section>
         <section className="">
           <div className="row">
+            <div className="col-md-3"></div>
             <div className="col-md-3">+569 8581 9870</div>
-            <div className="col-md-3">contacto@termisur.cl</div>
-            <div className="col-md-3">ventas@termisur.cl</div>
             <div className="col-md-3">Temuco, Araucanía, Chile</div>
+            <div className="col-md-3"></div>
           </div>
           <p className="d-flex justify-content-center align-items-center"></p>
         </section>
