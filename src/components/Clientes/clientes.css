@@ -38,6 +38,7 @@
   /* Espacio interno del card */
   background-color: #f8f8f8;
   /* Color de fondo del card */
+  width: 300px;
 }
 
 .card-title {
@@ -99,4 +100,31 @@
 .testimonio{
   color :rgba(0, 0, 0, 0.9);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container-fluid {
+  padding-top: 4rem;
+  background-color: #fcfcfc;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-top: 0.5rem solid #ff7e2b;
+}
+
+.testimonios-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.card-wrapper {
+  margin-right: 15px;
+  width: 320px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #f8f8f8;
 }
