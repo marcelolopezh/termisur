@@ -18,7 +18,7 @@ let clientes = [
   },
   {
     id: 2,
-    nombre: "Javier Belrán",
+    nombre: "Javier Beltrán",
     testimonio:
       "Me acomodó mucho el trabajo y la responsabilidad de Termisur, agrego que son muy eficientes en lo que hacen, entregan una muy buena asesoría que se complementa bastante bien con mis construcciones de alto estándar, 100% recomendables.",
     img: javierbeltran,
