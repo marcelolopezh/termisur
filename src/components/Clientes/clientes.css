@@ -101,7 +101,7 @@
   color :rgba(0, 0, 0, 0.9);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.container-fluid {
+.container-fluid-custom {
   padding-top: 4rem;
   background-color: #fcfcfc;
   background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");

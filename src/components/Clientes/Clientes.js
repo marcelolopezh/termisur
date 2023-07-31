@@ -58,7 +58,7 @@ export const Clientes = () => {
   clientes = shuffleArray(clientes);
 
   return (
-    <div id="clientes" className="container-fluid">
+    <div id="clientes" className="container-fluid-custom">
       <Container>
         <Row>
           <Col md={12} className="text-center">
