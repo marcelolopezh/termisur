@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./clientes.css";
@@ -47,23 +47,13 @@ let clientes = [
 ];
 
 export const Clientes = () => {
-  const [expandedTestimonio, setExpandedTestimonio] = useState(null);
-
-  const handleMouseEnter = (id) => {
-    setExpandedTestimonio(id);
-  };
-
-  const handleMouseLeave = () => {
-    setExpandedTestimonio(null);
-  };
-
-  const  shuffleArray = (array) => {
+  const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
-  }
+  };
 
   clientes = shuffleArray(clientes);
 
@@ -84,13 +74,7 @@ export const Clientes = () => {
           <div className="testimonios-row">
             {clientes.map((cliente) => (
               <div key={cliente.id} className="card-wrapper">
-                <Card
-                  onMouseEnter={() => handleMouseEnter(cliente.id)}
-                  onMouseLeave={handleMouseLeave}
-                  className={`card ${
-                    expandedTestimonio === cliente.id ? "expanded" : ""
-                  }`}
-                >
+                <Card>
                   <Card.Img src={cliente.img} />
                   <Card.Body>
                     <Card.Title>{cliente.nombre}</Card.Title>
